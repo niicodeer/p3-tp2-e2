@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistas - Sonidos de la Ciudad</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div id="logo-principal" class="logo">
+          <a href="./index.html">
+            <h1><i class="fas fa-headphones-alt"></i> Sonidos de la Ciudad</h1>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <ul>
+              <li><a href="./artistas.html">Artistas</a></li>
+              <li><a href="./cronograma.html">Cronograma</a></li>
+              <li><a href="./entradas.html">Entradas</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      </header>
+    <main class="container container-margin">
+      <h2>Contacto</h2>
+      <form action="mailto:e.agustinrz@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required /><br />
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto">
+          <option value="info">Información</option>
+          <option value="entradas">Entradas</option>
+          <option value="artistas">Artistas</option>
+          <option value="prensa">Prensa</option></select
+        ><br />
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea
+        ><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2023 Sonidos de la Ciudad. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
