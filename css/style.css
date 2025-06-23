@@ -489,3 +489,105 @@ main.container form button[type="submit"]:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+/* --- ESTILOS PARA EL CONTADOR REGRESIVO --- */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.countdown-item {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 100px;
+  border: 1px solid var(--primary-color);
+}
+
+.countdown-item span:first-child {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: #fff;
+}
+
+.countdown-item span:last-child {
+  font-size: 1rem;
+  color: #ddd;
+  text-transform: uppercase;
+}
+
+.festival-live {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1.5rem;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 10px;
+}
+
+/* --- ESTILOS PARA EL CRONOGRAMA INTERACTIVO --- */
+.schedule-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.schedule-table thead {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.schedule-table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #dbeaff;
+}

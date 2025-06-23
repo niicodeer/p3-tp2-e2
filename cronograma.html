@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artistas - Sonidos de la Ciudad</title>
@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-<body>
+  <body>
     <header class="site-header">
       <div class="container">
         <div id="logo-principal" class="logo">
@@ -35,46 +35,32 @@
         </nav>
       </div>
     </header>
-    <main class="container container-margin">        
-        <h2>Cronograma de actuaciones</h2>
-        <ol>
-            <li>Viernes 15/11 - 18:00 - Apertura</li>
-            <li>Viernes 15/11 - 19:00 - La Banda Urbana</li>
-            <li>Sábado 16/11 - 18:00 - Los Sonidos Callejeros</li>
-            <li>Domingo 17/11 - 20:00 - DJ Metrópolis</li>
-        </ol>
-        <h3>Resumen por escenario</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Escenario</th>
-                    <th>Artista</th>
-                    <th>Horario</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Principal</td>
-                    <td>La Banda Urbana</td>
-                    <td>15/11 - 19:00</td>
-                </tr>
-                <tr>
-                    <td>Secundario</td>
-                    <td>Los Sonidos Callejeros</td>
-                    <td>16/11 - 18:00</td>
-                </tr>
-                <tr>
-                    <td>Electrónico</td>
-                    <td>DJ Metrópolis</td>
-                    <td>17/11 - 20:00</td>
-                </tr>
-            </tbody>
-        </table>
+    <main class="container container-margin">
+      <h2>Cronograma de actuaciones</h2>
+      <div id="schedule-filters" class="schedule-filters">
+        <button class="filter-btn active" data-day="Todos">Todos</button>
+        <button class="filter-btn" data-day="Viernes">Viernes</button>
+        <button class="filter-btn" data-day="Sábado">Sábado</button>
+        <button class="filter-btn" data-day="Domingo">Domingo</button>
+      </div>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Artista</th>
+            <th>Día</th>
+            <th>Horario</th>
+            <th>Escenario</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body"></tbody>
+      </table>
     </main>
     <footer class="site-footer">
       <div class="container">
         <p>&copy; 2023 Sonidos de la Ciudad. Todos los derechos reservados.</p>
       </div>
     </footer>
-</body>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

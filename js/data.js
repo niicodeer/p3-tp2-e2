@@ -1,0 +1,22 @@
+export const artistas = [
+  { nombre: "Wos", dia: "Viernes", horario: "22:00", escenario: "Principal" },
+  { nombre: "Divididos", dia: "Viernes", horario: "20:30", escenario: "Principal" },
+  { nombre: "Nicki Nicole", dia: "Viernes", horario: "19:00", escenario: "Secundario" },
+  { nombre: "Usted Señalemelo", dia: "Viernes", horario: "18:00", escenario: "Secundario" },
+  { nombre: "El Mató a un Policía Motorizado", dia: "Viernes", horario: "21:00", escenario: "Alternativo" },
+  { nombre: "Babasónicos", dia: "Sábado", horario: "22:00", escenario: "Principal" },
+  { nombre: "Duki", dia: "Sábado", horario: "23:30", escenario: "Principal" },
+  { nombre: "Fito Páez", dia: "Sábado", horario: "20:00", escenario: "Principal" },
+  { nombre: "Marilina Bertoldi", dia: "Sábado", horario: "19:00", escenario: "Secundario" },
+  { nombre: "Los Auténticos Decadentes", dia: "Sábado", horario: "21:00", escenario: "Secundario" },
+  { nombre: "Peces Raros", dia: "Sábado", horario: "18:00", escenario: "Alternativo" },
+  { nombre: "Bizarrap", dia: "Sábado", horario: "01:00", escenario: "Electrónico" },
+  { nombre: "Andrés Calamaro", dia: "Domingo", horario: "21:00", escenario: "Principal" },
+  { nombre: "Nathy Peluso", dia: "Domingo", horario: "19:30", escenario: "Principal" },
+  { nombre: "Catupecu Machu", dia: "Domingo", horario: "18:00", escenario: "Secundario" },
+  { nombre: "Trueno", dia: "Domingo", horario: "20:00", escenario: "Secundario" },
+  { nombre: "Juana Molina", dia: "Domingo", horario: "17:00", escenario: "Alternativo" },
+  { nombre: "Hernán Cattáneo", dia: "Domingo", horario: "22:30", escenario: "Electrónico" },
+  { nombre: "Ca7riel & Paco Amoroso", dia: "Domingo", horario: "21:30", escenario: "Alternativo" },
+  { nombre: "Louta", dia: "Viernes", horario: "20:00", escenario: "Alternativo" }
+];
