@@ -3,7 +3,7 @@
     <section id="hero">
         <div class="hero-content">
             <h2>Vive la música en el corazón de tu ciudad</h2>
-            <p>Festival gratuito al aire libre · 15 al 17 de Noviembre · Parque Central</p>
+            <p>Festival gratuito al aire libre<br>15 al 17 de Noviembre<br>Parque Central</p>
             <Countdown/>
             <a href="#entradas" class="btn btn-primary">Reservá tu entrada</a>
         </div>

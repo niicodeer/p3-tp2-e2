@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "evento": "Divididos - Gira 40 Años",
+    "fecha": "2025-08-15",
+    "lugar": "Estadio Madre de Ciudades",
+    "ciudad": "Santiago del Estero",
+    "artista": "Divididos",
+    "genero": "Rock",
+    "precio_general": 15000,
+    "precio_vip": 25000,
+    "precio_palco": 40000
+  },
+  {
+    "id": 2,
+    "evento": "Sonidos Electrónicos Fest",
+    "fecha": "2025-09-20",
+    "lugar": "Complejo FORUM",
+    "ciudad": "Santiago del Estero",
+    "artista": "Hernán Cattáneo, Bizarrap",
+    "genero": "Electrónica",
+    "precio_general": 20000,
+    "precio_vip": 35000,
+    "precio_palco": 50000
+  },
+  {
+    "id": 3,
+    "evento": "Noche de Jazz & Soul",
+    "fecha": "2025-10-10",
+    "lugar": "Paraninfo UNSE",
+    "ciudad": "Santiago del Estero",
+    "artista": "Escalandrum",
+    "genero": "Jazz",
+    "precio_general": 8000,
+    "precio_vip": 12000,
+    "precio_palco": 18000
+  },
+  {
+    "id": 4,
+    "evento": "La Renga en Concierto",
+    "fecha": "2025-11-22",
+    "lugar": "Estadio Único",
+    "ciudad": "La Plata",
+    "artista": "La Renga",
+    "genero": "Rock",
+    "precio_general": 18000,
+    "precio_vip": 30000,
+    "precio_palco": 45000
+  },
+  {
+    "id": 5,
+    "evento": "Cosquín Rock 2026",
+    "fecha": "2026-02-14",
+    "lugar": "Aeródromo Santa María de Punilla",
+    "ciudad": "Córdoba",
+    "artista": "Lineup a confirmar",
+    "genero": "Rock/Pop",
+    "precio_general": 25000,
+    "precio_vip": 45000,
+    "precio_palco": 70000
+  },
+  {
+    "id": 6,
+    "evento": "Wos - Gira Descartable",
+    "fecha": "2025-12-05",
+    "lugar": "Hipódromo de Palermo",
+    "ciudad": "Buenos Aires",
+    "artista": "WOS",
+    "genero": "Urbano/Rock",
+    "precio_general": 22000,
+    "precio_vip": 40000,
+    "precio_palco": 60000
+  },
+  {
+    "id": 7,
+    "evento": "Festival de Tango Moderno",
+    "fecha": "2025-09-28",
+    "lugar": "Usina del Arte",
+    "ciudad": "Buenos Aires",
+    "artista": "Bajofondo, Otros",
+    "genero": "Tango Electrónico",
+    "precio_general": 9000,
+    "precio_vip": 15000,
+    "precio_palco": 25000
+  },
+  {
+    "id": 8,
+    "evento": "Primavera Sound Buenos Aires",
+    "fecha": "2025-11-23",
+    "lugar": "Parque Sarmiento",
+    "ciudad": "Buenos Aires",
+    "artista": "Pulp, The National, Otros",
+    "genero": "Indie/Alternativo",
+    "precio_general": 30000,
+    "precio_vip": 55000,
+    "precio_palco": 90000
+  },
+  {
+    "id": 9,
+    "evento": "Abel Pintos - Acústico",
+    "fecha": "2025-10-18",
+    "lugar": "Teatro El Círculo",
+    "ciudad": "Rosario",
+    "artista": "Abel Pintos",
+    "genero": "Folklore/Pop",
+    "precio_general": 12000,
+    "precio_vip": 22000,
+    "precio_palco": 35000
+  },
+  {
+    "id": 10,
+    "evento": "Fiesta Bresh",
+    "fecha": "2025-08-30",
+    "lugar": "GEBA",
+    "ciudad": "Buenos Aires",
+    "artista": "DJs Residentes",
+    "genero": "Urbano/Pop",
+    "precio_general": 10000,
+    "precio_vip": 18000,
+    "precio_palco": 0
+  }
+]

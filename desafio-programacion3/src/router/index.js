@@ -31,6 +31,11 @@ const router = createRouter({
       name: 'entradas',
       component: () => import('../views/EntradasView.vue') // Lazy loading
     },
+    {
+      path: '/checkout/:id', // Ruta dinámica para el formulario
+      name: 'checkout',
+      component: () => import('../views/CheckoutView.vue')
+    }
   ]
 })
 
