@@ -27,8 +27,8 @@ const router = createRouter({
       component: () => import('../views/ArtistasView.vue') // Lazy loading
     },
     {
-      path: '/entradas',
-      name: 'entradas',
+      path: '/eventos',
+      name: 'eventos',
       component: () => import('../views/EntradasView.vue') // Lazy loading
     },
     {

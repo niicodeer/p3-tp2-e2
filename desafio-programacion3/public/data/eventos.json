@@ -2,6 +2,7 @@
   {
     "id": 1,
     "evento": "Divididos - Gira 40 Años",
+    "imagen": "/assets/eventos/evento1.jpg",
     "fecha": "2025-08-15",
     "lugar": "Estadio Madre de Ciudades",
     "ciudad": "Santiago del Estero",
@@ -9,11 +10,20 @@
     "genero": "Rock",
     "precio_general": 15000,
     "precio_vip": 25000,
-    "precio_palco": 40000
+    "precio_palco": 40000,
+    "lineup": [
+      {
+        "nombre": "Divididos",
+        "dia": "Viernes",
+        "horario": "21:00",
+        "escenario": "Principal"
+      }
+    ]
   },
   {
     "id": 2,
     "evento": "Sonidos Electrónicos Fest",
+    "imagen": "/assets/eventos/evento2.jpg",
     "fecha": "2025-09-20",
     "lugar": "Complejo FORUM",
     "ciudad": "Santiago del Estero",
@@ -21,23 +31,26 @@
     "genero": "Electrónica",
     "precio_general": 20000,
     "precio_vip": 35000,
-    "precio_palco": 50000
-  },
-  {
-    "id": 3,
-    "evento": "Noche de Jazz & Soul",
-    "fecha": "2025-10-10",
-    "lugar": "Paraninfo UNSE",
-    "ciudad": "Santiago del Estero",
-    "artista": "Escalandrum",
-    "genero": "Jazz",
-    "precio_general": 8000,
-    "precio_vip": 12000,
-    "precio_palco": 18000
+    "precio_palco": 50000,
+    "lineup": [
+      {
+        "nombre": "Bizarrap",
+        "dia": "Sábado",
+        "horario": "22:00",
+        "escenario": "Main Stage"
+      },
+      {
+        "nombre": "Hernán Cattáneo",
+        "dia": "Sábado",
+        "horario": "00:00",
+        "escenario": "Main Stage"
+      }
+    ]
   },
   {
     "id": 4,
     "evento": "La Renga en Concierto",
+    "imagen": "/assets/eventos/evento3.jpg",
     "fecha": "2025-11-22",
     "lugar": "Estadio Único",
     "ciudad": "La Plata",
@@ -45,23 +58,59 @@
     "genero": "Rock",
     "precio_general": 18000,
     "precio_vip": 30000,
-    "precio_palco": 45000
+    "precio_palco": 45000,
+    "lineup": [
+      {
+        "nombre": "La Renga",
+        "dia": "Sábado",
+        "horario": "21:30",
+        "escenario": "Único"
+      }
+    ]
   },
   {
     "id": 5,
     "evento": "Cosquín Rock 2026",
+    "imagen": "/assets/eventos/evento4.jpg",
     "fecha": "2026-02-14",
     "lugar": "Aeródromo Santa María de Punilla",
     "ciudad": "Córdoba",
-    "artista": "Lineup a confirmar",
+    "artista": "Lineup variado",
     "genero": "Rock/Pop",
     "precio_general": 25000,
     "precio_vip": 45000,
-    "precio_palco": 70000
+    "precio_palco": 70000,
+    "lineup": [
+      {
+        "nombre": "Fito Páez",
+        "dia": "Sábado",
+        "horario": "20:00",
+        "escenario": "Norte"
+      },
+      {
+        "nombre": "Ciro y los Persas",
+        "dia": "Sábado",
+        "horario": "22:00",
+        "escenario": "Sur"
+      },
+      {
+        "nombre": "Usted Señalemelo",
+        "dia": "Domingo",
+        "horario": "19:00",
+        "escenario": "Montaña"
+      },
+      {
+        "nombre": "Wos",
+        "dia": "Domingo",
+        "horario": "23:00",
+        "escenario": "Norte"
+      }
+    ]
   },
   {
     "id": 6,
     "evento": "Wos - Gira Descartable",
+    "imagen": "/assets/eventos/evento6.jpg",
     "fecha": "2025-12-05",
     "lugar": "Hipódromo de Palermo",
     "ciudad": "Buenos Aires",
@@ -69,23 +118,20 @@
     "genero": "Urbano/Rock",
     "precio_general": 22000,
     "precio_vip": 40000,
-    "precio_palco": 60000
-  },
-  {
-    "id": 7,
-    "evento": "Festival de Tango Moderno",
-    "fecha": "2025-09-28",
-    "lugar": "Usina del Arte",
-    "ciudad": "Buenos Aires",
-    "artista": "Bajofondo, Otros",
-    "genero": "Tango Electrónico",
-    "precio_general": 9000,
-    "precio_vip": 15000,
-    "precio_palco": 25000
+    "precio_palco": 60000,
+    "lineup": [
+      {
+        "nombre": "WOS",
+        "dia": "Viernes",
+        "horario": "21:00",
+        "escenario": "Principal"
+      }
+    ]
   },
   {
     "id": 8,
     "evento": "Primavera Sound Buenos Aires",
+    "imagen": "/assets/eventos/evento5.jpg",
     "fecha": "2025-11-23",
     "lugar": "Parque Sarmiento",
     "ciudad": "Buenos Aires",
@@ -93,30 +139,128 @@
     "genero": "Indie/Alternativo",
     "precio_general": 30000,
     "precio_vip": 55000,
-    "precio_palco": 90000
+    "precio_palco": 90000,
+    "lineup": [
+      {
+        "nombre": "The National",
+        "dia": "Sábado",
+        "horario": "21:00",
+        "escenario": "Heineken"
+      },
+      {
+        "nombre": "Pulp",
+        "dia": "Sábado",
+        "horario": "23:00",
+        "escenario": "Heineken"
+      },
+      {
+        "nombre": "El Mató a un Policía Motorizado",
+        "dia": "Domingo",
+        "horario": "20:00",
+        "escenario": "Nobody Is Normal"
+      }
+    ]
   },
   {
-    "id": 9,
-    "evento": "Abel Pintos - Acústico",
-    "fecha": "2025-10-18",
-    "lugar": "Teatro El Círculo",
-    "ciudad": "Rosario",
-    "artista": "Abel Pintos",
-    "genero": "Folklore/Pop",
-    "precio_general": 12000,
-    "precio_vip": 22000,
-    "precio_palco": 35000
-  },
-  {
-    "id": 10,
-    "evento": "Fiesta Bresh",
-    "fecha": "2025-08-30",
-    "lugar": "GEBA",
+    "id": 11,
+    "evento": "Noche de Clásicos del Rock Nacional",
+    "imagen": "/assets/eventos/evento1.jpg",
+    "fecha": "2025-11-08",
+    "lugar": "Luna Park",
     "ciudad": "Buenos Aires",
-    "artista": "DJs Residentes",
-    "genero": "Urbano/Pop",
-    "precio_general": 10000,
-    "precio_vip": 18000,
-    "precio_palco": 0
+    "artista": "Fito Páez, Charly García",
+    "genero": "Rock Nacional",
+    "precio_general": 28000,
+    "precio_vip": 50000,
+    "precio_palco": 80000,
+    "lineup": [
+      {
+        "nombre": "Fito Páez",
+        "dia": "Sábado",
+        "horario": "21:00",
+        "escenario": "Principal"
+      },
+      {
+        "nombre": "Charly García",
+        "dia": "Sábado",
+        "horario": "23:00",
+        "escenario": "Principal"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "evento": "Festival Nuestro",
+    "imagen": "/assets/eventos/evento2.jpg",
+    "fecha": "2026-05-25",
+    "lugar": "Tecnópolis",
+    "ciudad": "Buenos Aires",
+    "artista": "Babasónicos, El Kuelgue, y más",
+    "genero": "Indie/Rock/Pop",
+    "precio_general": 19000,
+    "precio_vip": 32000,
+    "precio_palco": 0,
+    "lineup": [
+      {
+        "nombre": "Babasónicos",
+        "dia": "Lunes",
+        "horario": "20:00",
+        "escenario": "Escenario Nuestro"
+      },
+      {
+        "nombre": "El Kuelgue",
+        "dia": "Lunes",
+        "horario": "18:30",
+        "escenario": "Escenario Lado B"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "evento": "La Delio Valdez - Cumbia y Carnaval",
+    "imagen": "/assets/eventos/evento3.jpg",
+    "fecha": "2025-12-12",
+    "lugar": "Movistar Arena",
+    "ciudad": "Buenos Aires",
+    "artista": "La Delio Valdez",
+    "genero": "Cumbia",
+    "precio_general": 16000,
+    "precio_vip": 28000,
+    "precio_palco": 42000,
+    "lineup": [
+      {
+        "nombre": "La Delio Valdez",
+        "dia": "Viernes",
+        "horario": "21:00",
+        "escenario": "Arena 360"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "evento": "Mendoza Folk Fest",
+    "imagen": "/assets/eventos/evento4.jpg",
+    "fecha": "2026-01-24",
+    "lugar": "Teatro Griego Frank Romero Day",
+    "ciudad": "Mendoza",
+    "artista": "Divididos, Las Pelotas",
+    "genero": "Folklore/Rock",
+    "precio_general": 14000,
+    "precio_vip": 24000,
+    "precio_palco": 38000,
+    "lineup": [
+      {
+        "nombre": "Las Pelotas",
+        "dia": "Sábado",
+        "horario": "19:00",
+        "escenario": "Principal"
+      },
+      {
+        "nombre": "Divididos",
+        "dia": "Sábado",
+        "horario": "21:00",
+        "escenario": "Principal"
+      }
+    ]
   }
 ]

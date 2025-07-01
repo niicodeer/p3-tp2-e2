@@ -56,17 +56,17 @@ const sortedSchedule = computed(() => {
 <template>
   <main class="container container-margin">
     <div class="header-section">
-      <h2>Explorar Eventos</h2>
-      <p>Busca tu artista favorito o filtra por categoría para encontrar tu próximo festival.</p>
+      <h2>Explorar Cronogramas</h2>
+      <p>Busca tu artista favorito o filtra por ciudad para ver el lineup de cada evento.</p>
     </div>
 
     <div class="filters-container">
       <div class="search-bar">
         <i class="fas fa-search"></i>
-        <input type="text" v-model="searchQuery" placeholder="Buscar por artista...">
+        <input type="text" v-model="searchQuery" placeholder="Buscar por artista o evento...">
       </div>
       <div class="category-filter">
-        <i class="fas fa-tag"></i>
+        <i class="fas fa-map-marker-alt"></i>
         <select v-model="selectedCity">
           <option value="">Todas las ciudades</option>
           <option v-for="city in cities" :key="city" :value="city">{{ city }}</option>
@@ -79,13 +79,18 @@ const sortedSchedule = computed(() => {
         <div class="event-header" @click="toggleEvent(event.id)">
           <div class="event-info">
             <h3>{{ event.evento }}</h3>
-            <p><i class="fas fa-calendar-alt"></i> {{ event.fecha }} | <i class="fas fa-map-marker-alt"></i> {{
-              event.ciudad }}</p>
+            <p><i class="fas fa-calendar-alt"></i> {{ new Date(event.fecha).toLocaleDateString('es-AR', {
+              timeZone:
+                'UTC'
+            }) }} | <i class="fas fa-map-marker-alt"></i> {{ event.ciudad }}</p>
           </div>
-          <i class="fas fa-chevron-down" :class="{ 'rotated': isEventExpanded(event.id) }"></i>
+          <div class="event-actions">
+            <router-link :to="`/checkout/${event.id}`" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 1rem;">Comprar Entradas</router-link>
+            <i class="fas fa-chevron-down" :class="{ 'rotated': isEventExpanded(event.id) }"></i>
+          </div>
         </div>
         <div v-if="isEventExpanded(event.id)" class="event-details">
-          <table class="schedule-table">
+          <table v-if="event.lineup && event.lineup.length > 0" class="schedule-table">
             <thead>
               <tr>
                 <th>Artista</th>
@@ -95,7 +100,7 @@ const sortedSchedule = computed(() => {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="artista in event.lineup" :key="artista.nombre">
+              <tr v-for="artista in sortedLineup(event.lineup)" :key="artista.nombre">
                 <td>{{ artista.nombre }}</td>
                 <td>{{ artista.dia }}</td>
                 <td>{{ artista.horario }}</td>
@@ -103,6 +108,7 @@ const sortedSchedule = computed(() => {
               </tr>
             </tbody>
           </table>
+          <p v-else class="no-lineup">Lineup a confirmar.</p>
         </div>
       </div>
     </div>
@@ -114,27 +120,35 @@ const sortedSchedule = computed(() => {
 
 <script setup>
 import { ref, onMounted, computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 const events = ref([]);
 const searchQuery = ref('');
 const selectedCity = ref('');
-const expandedEvents = ref([]);
+const expandedEvents = ref([]); // Almacena los IDs de los eventos expandidos
+const route = useRoute();
 
 onMounted(async () => {
   try {
     const response = await fetch('/data/eventos.json');
-    if (!response.ok) throw new Error('Network response was not ok');
+    if (!response.ok) throw new Error('No se pudieron cargar los eventos.');
     events.value = await response.json();
+
+    if (route.query.search) {
+      searchQuery.value = route.query.search;
+    }
   } catch (error) {
     console.error("Error al cargar los eventos:", error);
   }
 });
 
+// Obtiene una lista única de ciudades para el filtro
 const cities = computed(() => {
   const allCities = events.value.map(event => event.ciudad).filter(Boolean);
   return [...new Set(allCities)];
 });
 
+// Filtra los eventos según la ciudad y la búsqueda
 const filteredEvents = computed(() => {
   let filtered = events.value;
 
@@ -145,13 +159,30 @@ const filteredEvents = computed(() => {
   if (searchQuery.value.trim()) {
     const lowerCaseQuery = searchQuery.value.toLowerCase();
     filtered = filtered.filter(event =>
-      event.artista.toLowerCase().includes(lowerCaseQuery)
+      // Busca en el nombre del evento, el artista principal y en el lineup
+      event.evento.toLowerCase().includes(lowerCaseQuery) ||
+      event.artista.toLowerCase().includes(lowerCaseQuery) ||
+      (event.lineup && event.lineup.some(artist => artist.nombre.toLowerCase().includes(lowerCaseQuery)))
     );
   }
 
   return filtered;
 });
 
+// Objeto para ordenar los días correctamente
+const dayOrder = { "Viernes": 1, "Sábado": 2, "Domingo": 3 };
+
+// Función para ordenar el lineup de un evento específico
+const sortedLineup = (lineup) => {
+  if (!lineup) return [];
+  return [...lineup].sort((a, b) => {
+    const dayComparison = (dayOrder[a.dia] || 99) - (dayOrder[b.dia] || 99);
+    if (dayComparison !== 0) return dayComparison;
+    return a.horario.localeCompare(b.horario);
+  });
+};
+
+// Maneja la expansión/colapso de las cards de eventos
 const toggleEvent = (eventId) => {
   const index = expandedEvents.value.indexOf(eventId);
   if (index > -1) {
@@ -161,12 +192,20 @@ const toggleEvent = (eventId) => {
   }
 };
 
+// Verifica si una card de evento está expandida
 const isEventExpanded = (eventId) => {
   return expandedEvents.value.includes(eventId);
 };
 </script>
 
 <style scoped>
+.no-lineup {
+  padding: 1.5rem;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
 .container-margin {
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -264,8 +303,16 @@ const isEventExpanded = (eventId) => {
 }
 
 .event-details {
+  overflow: auto;
   padding: 0 1.5rem 1.5rem 1.5rem;
   animation: fadeIn 0.5s ease;
+}
+.event-actions{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: end;
+  text-align: center;
 }
 
 .schedule-table {
@@ -303,6 +350,12 @@ const isEventExpanded = (eventId) => {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (max-width: 560px) {
+ .event-actions{
+  flex-direction: column;
+ }   
 }
 
 @media (max-width: 768px) {

@@ -83,28 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="feedback-message" v-if="validation.entradas.message">{{ validation.entradas.message }}</p>
-
-                <!-- <div class="form-group-inline">
-                    <div class="form-group">
-                        <label for="tipoEntrada">Tipo de Entrada</label>
-                        <select id="tipoEntrada" v-model="formData.tipoEntrada" @blur="validateField('tipoEntrada')"
-                            :class="getValidationClass('tipoEntrada')">
-                            <option disabled value="">Seleccione un tipo de entrada</option>
-                            <option value="General">General (${{ evento?.precio_general.toLocaleString() }})</option>
-                            <option value="VIP">VIP (${{ evento?.precio_vip.toLocaleString() }})</option>
-                            <option v-if="evento?.precio_palco > 0" value="Palco">Palco (${{
-                                evento?.precio_palco.toLocaleString() }})</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cantidad">Cantidad</label>
-                        <input type="number" id="cantidad" min="0" max="6" v-model.number="formData.cantidad"
-                            @input="validateField('cantidad')" :class="getValidationClass('cantidad')">
-                        <p class="feedback-message" v-if="validation.cantidad.message">{{ validation.cantidad.message }}
-                        </p>
-                    </div>
-                </div> -->
+                <p class="feedback-message" :class="{ 'is-valid': validation.entradas.valid, 'is-invalid': !validation.entradas.valid }" v-if="validation.entradas.message">{{ validation.entradas.message }}</p>
 
             </fieldset>
 
@@ -115,10 +94,10 @@
                         <input id="efectivo" type="radio" v-model="formData.metodoPago" value="Efectivo"
                             @change="validateField('metodoPago')"> <i class="fas fa-money-bill-wave"></i> Efectivo
                     </label>
-                    <label for="cripto">
+                    <!-- <label for="cripto">
                         <input id="cripto" type="radio" v-model="formData.metodoPago" value="Cripto"
                             @change="validateField('metodoPago')"> <i class="fa-brands fa-btc"></i> Cripto
-                    </label>
+                    </label> -->
                     <label for="tarjeta">
                         <input id="tarjeta" type="radio" v-model="formData.metodoPago" value="Tarjeta"
                             @change="validateField('metodoPago')"> <i class="fas fa-credit-card"></i> Tarjeta de
@@ -762,5 +741,11 @@ input:read-only {
     color: var(--dark-color);
     margin-top: 1rem;
     text-align: right;
+}
+
+@media (max-width: 560px) {
+    .form-group-inline {
+        flex-direction: column;
+    }
 }
 </style>

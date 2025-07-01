@@ -1,0 +1,110 @@
+[
+  {
+    "id": "wos",
+    "nombre": "WOS",
+    "genero": "Urbano / Rock",
+    "imagen": "/assets/artistas/wos.jpg",
+    "descripcionCorta": "El referente de la nueva generación del rock y hip-hop argentino.",
+    "biografia": "Valentín Oliva, conocido como WOS, es un rapero y freestyler que ha revolucionado la escena musical argentina. Ganador de múltiples batallas de freestyle, ha trascendido el género con álbumes como 'Caravana' y 'Oscuro Éxtasis', fusionando rock, rap y ritmos alternativos con letras de alto contenido social y poético.",
+    "spotifyId": "5YCc6xS5Gpj3EkaYGdjyNK"
+  },
+  {
+    "id": "divididos",
+    "nombre": "Divididos",
+    "genero": "Rock",
+    "imagen": "/assets/artistas/divididos.jpg",
+    "descripcionCorta": "La aplanadora del rock, un trío icónico con un sonido potente e inconfundible.",
+    "biografia": "Conocidos como 'La Aplanadora del Rock', Divididos es una de las bandas más influyentes de Argentina. Liderada por Ricardo Mollo y Diego Arnedo, su música es una poderosa fusión de rock, funk y folklore. Discos como 'Acariciando lo áspero' y 'La era de la boludez' son pilares del rock nacional.",
+    "spotifyId": "6ZIgPKHzpcswB8zh7sRIhx"
+  },
+  {
+    "id": "fitopaez",
+    "nombre": "Fito Páez",
+    "genero": "Rock Nacional",
+    "imagen": "/assets/artistas/fito.jpg",
+    "descripcionCorta": "Una leyenda del rock en español, autor de himnos generacionales.",
+    "biografia": "Fito Páez es una de las figuras más importantes de la música popular argentina y latinoamericana. Con una carrera que abarca décadas, ha compuesto algunas de las canciones más icónicas del rock en español. Su álbum 'El amor después del amor' es el disco más vendido en la historia del rock argentino.",
+    "spotifyId": "1PFPa4gFDyKtnbycnLkPtN"
+  },
+  {
+    "id": "babasonicos",
+    "nombre": "Babasónicos",
+    "genero": "Rock Alternativo",
+    "imagen": "/assets/artistas/babasonicos.jpg",
+    "descripcionCorta": "La banda que redefinió el rock alternativo en Latinoamérica con su estilo único.",
+    "biografia": "Babasónicos es una banda que siempre ha estado a la vanguardia, jugando con géneros que van desde el rock psicodélico hasta el pop electrónico. Liderados por Adrián Dárgelos, son conocidos por su constante reinvención sonora y lírica, creando una discografía ecléctica y fundamental.",
+    "spotifyId": "2F9pvj94b52wGKs0OqiNi2"
+  },
+  {
+    "id": "hernan",
+    "nombre": "Hernán Cattáneo",
+    "genero": "Progressive House",
+    "imagen": "/assets/artistas/cattaneo.jpg",
+    "descripcionCorta": "El embajador argentino de la música electrónica en el mundo.",
+    "biografia": "Hernán Cattáneo es uno de los DJs y productores más respetados a nivel mundial en la escena del progressive house. Sus sets son conocidos por su calidad musical y su capacidad para crear atmósferas únicas. Es un referente indiscutido y un orgullo nacional en la música electrónica.",
+    "spotifyId": "2XEVGx9l6qWkMhnz8BDgfG"
+  },
+  {
+    "id": "larenga",
+    "nombre": "La Renga",
+    "genero": "Hard Rock",
+    "imagen": "/assets/artistas/larenga.jpg",
+    "descripcionCorta": "Iconos del rock barrial y la autogestión con un sonido crudo y potente.",
+    "biografia": "Originaria de Mataderos, La Renga es una de las bandas más convocantes y queridas de Argentina. Fieles a un estilo de hard rock con influencias de blues, han mantenido una carrera independiente y autogestionada, creando una conexión única con su masivo público a través de himnos como 'La balada del diablo y la muerte'.",
+    "spotifyId": "30fEdZPXgWfC4sNttcyB3C"
+  },
+  {
+    "id": "abelpintos",
+    "nombre": "Abel Pintos",
+    "genero": "Folklore / Pop Latino",
+    "imagen": "/assets/artistas/abelpintos.jpg",
+    "descripcionCorta": "Uno de los artistas más populares de Argentina, fusionando folklore y pop romántico.",
+    "biografia": "Abel Pintos comenzó su carrera a muy temprana edad en el folklore, apadrinado por León Gieco. Con el tiempo, su música evolucionó, incorporando elementos del pop y la balada romántica, lo que le permitió alcanzar una popularidad masiva. Su carisma y su voz lo han convertido en un referente de la música actual.",
+    "spotifyId": "6HTUcOExehqydqa7C3usAa"
+  },
+  {
+    "id": "delovaldez",
+    "nombre": "La Delio Valdez",
+    "genero": "Cumbia",
+    "imagen": "/assets/artistas/deliovaldez.jpg",
+    "descripcionCorta": "Una orquesta cooperativa que recupera la esencia de la cumbia colombiana.",
+    "biografia": "La Delio Valdez es una orquesta de cumbia tradicional argentina que ha ganado enorme popularidad por su sonido potente y su formato cooperativo. Con una sección de vientos arrolladora y un repertorio que celebra los ritmos latinos, sus shows son verdaderas fiestas que invitan al baile y la celebración colectiva.",
+    "spotifyId": "3tzacGOmngxUV8W8lU9h3Q"
+  },
+  {
+    "id": "elkuelgue",
+    "nombre": "El Kuelgue",
+    "genero": "Rock Fusión / Alternativo",
+    "imagen": "/assets/artistas/elkuelgue.jpg",
+    "descripcionCorta": "Una mezcla única de candombe, rock, jazz y rap con humor y absurdo.",
+    "biografia": "Liderada por el multifacético Julián Kartún, El Kuelgue es una banda difícil de encasillar. Su propuesta musical es una fusión de múltiples géneros, donde la improvisación y las letras con toques de humor y absurdo son protagonistas. Son conocidos por la energía y la teatralidad de sus presentaciones en vivo.",
+    "spotifyId": "6rrSGd2mF3PgCFRGBGDhJc"
+  }, {
+    "id": "laspelotas",
+    "nombre": "Las Pelotas",
+    "genero": "Rock Alternativo",
+    "imagen": "/assets/artistas/laspelotas.jpg",
+    "descripcionCorta": "Nacidos de la mítica banda Sumo, un pilar del rock argentino.",
+    "biografia": "Tras la disolución de Sumo, dos de sus ex-integrantes formaron Las Pelotas. Con una carrera de más de 30 años, la banda ha sabido evolucionar manteniendo un sonido característico y una base de seguidores muy leal. Son reconocidos por la potencia de sus shows en vivo y clásicos que atraviesan generaciones.",
+    "spotifyId": "1Grt4pfmzfVhZhLHnvaSIe"
+  },
+  {
+    "id": "bizarrap",
+    "nombre": "Bizarrap",
+    "genero": "Urbano / Productor",
+    "imagen": "/assets/artistas/bizarrap.jpg",
+    "descripcionCorta": "El productor argentino que conquistó el mundo con sus BZRP Music Sessions.",
+    "biografia": "Gonzalo Julián Conde, conocido como Bizarrap, es un productor discográfico y DJ que se convirtió en un fenómeno global. Sus famosas 'Music Sessions', grabadas en su home studio, han contado con la participación de los artistas más grandes de la escena urbana y pop, acumulando miles de millones de reproducciones.",
+    "spotifyId": "716NhGYqD1jl2wI1Qkgq36"
+  },
+  {
+    "id": "ciro",
+    "nombre": "Ciro y los Persas",
+    "genero": "Rock",
+    "imagen": "/assets/artistas/ciro.jpg",
+    "descripcionCorta": "La continuación del legado de Los Piojos con la energía inagotable de Andrés Ciro.",
+    "biografia": "Luego de la separación de Los Piojos, una de las bandas más convocantes de Argentina, su líder Andrés Ciro Martínez formó Ciro y los Persas. Con esta banda, ha continuado llenando estadios y publicando éxitos que mezclan rock, blues y ritmos rioplatenses, manteniendo su lugar como uno de los showmans más importantes del país.",
+    "spotifyId": "2CUDNPWLbWNlV9RsreQZqQ"
+  }
+  
+]

@@ -329,9 +329,9 @@ audio {
   .site-header .container {
       flex-direction: column;
   }
-  .main-nav {
+  /* .main-nav {
       margin-top: 1rem;
-  }
+  } */
   .main-nav li {
       margin: 0 0.75rem;
   }

@@ -49,3 +49,18 @@
     }
   });
   </script>
+<style scoped>
+.main-title {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--primary-color);
+}
+.main-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+</style>
